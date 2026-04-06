@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Movie Searcher App</title>
+        <link rel="stylesheet" href="movie.css" />
+        <link rel="icon" href="data:" />
+    </head>
+    <body>
+        <header>
+            <h1>🎬 CineSearch</h1>
+            <p class="tagline">Search any movie. Save your favorites.</p>
+        </header>
+
+        <main>
+            <section class="search-section">
+                <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for a movie"
+                autocpmplete="off"
+                />
+
+                <select id="typeFilter">
+                    <option value="">All Types</option>
+                    <option value="movie">Movies</option>
+                    <option value="series">Series</option>
+                    <option value="Episode">Episodes</option>
+                </select>
+            </section>
+
+            <p id="statusMessage" class="status"></p>
+
+            <section id="resultsGrid" class="results-grid"></Section>
+
+            <section class="favorites-section">
+                <h2>⭐ My Favorites</h2>
+                <div id="favouritesGrid" class="results-grid"></div>
+            </section>
+        </main>
+        
+        <script src="movie.js"></script>
+    </body>
+</html>
